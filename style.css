@@ -1,0 +1,209 @@
+/* Reset some basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #f8a548;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('pexels-mikebirdy-170811.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .container {
+    text-align: center;
+    color: #b4a2a2;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-buttons .btn {
+    background-color: #ff5722;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #e64a19;
+}
+
+
+#featured-cars {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+#featured-cars h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#car-search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Featured Cars Grid Adjustments */
+.car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Car Item Styling */
+.car-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+.car-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.car-item h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.car-item p {
+    color: #333;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Hover effect for car items */
+.car-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+#sell-car {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+#sell-car form {
+    display: flex;
+    flex-direction: column;
+}
+
+#sell-car form input, 
+#sell-car form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#sell-car form textarea {
+    height: 100px;
+}
+
+#sell-car form button {
+    background-color: #f8a548;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sell-car form button:hover {
+    background-color: #d89e3f;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
